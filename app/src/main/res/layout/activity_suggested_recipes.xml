@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F7F2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipes for You"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#20352A" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Recipes are shown only when you have every required ingredient in sufficient quantities."
+        android:textSize="15sp"
+        android:textColor="#647267" />
+
+    <TextView
+        android:id="@+id/noRecipesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="No matching recipes yet. Add more ingredients to your pantry!"
+        android:textSize="16sp"
+        android:textColor="#647267"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/suggestedRecipesList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
